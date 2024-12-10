@@ -125,6 +125,11 @@ h2 {
     color: #f0f0f0; /* Un color de texto claro para mejorar el contraste para que se vea */
 }
 
+.lista{
+    color: #f0f0f0; /* Un color de texto claro para mejorar el contraste para que se vea */
+    font-size: 3em;
+}
+
 /* Estilo del botón dentro de .bento */
 .bento {
     display: flex;
