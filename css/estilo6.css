@@ -1,0 +1,174 @@
+body {
+    background-color: #091057;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Aseguramos que la página ocupe la altura completa */
+    margin: 0; /* Elimina márgenes por defecto */
+}
+
+div .boton {
+    text-align: center;
+    color: #f90000;
+}
+
+.boton {
+    text-align: center;
+    background-color: whitesmoke;
+    font-size: 3em;
+    padding: .5em;
+    border-radius: 10%;
+}
+
+.boton:hover {
+    background-color: #EC8305;
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
+
+#horario {
+    padding: 1em;
+    border-radius: 10px;
+    color: aliceblue;
+    font-size: 1.2em;
+    margin-top: 1em;
+    white-space: pre-wrap; /* Permite saltos de línea */
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+h1 {
+    text-align: center;
+    font-size: 4rem;
+    color: #DBD3D3;
+}
+
+h2 {
+    text-align: center;
+    font-size: 3rem;
+    color: #DBD3D3;
+}
+
+/* Ajustar la clase .bento para asegurarnos de que el botón esté al final */
+.bento {
+    display: flex;
+    justify-content: center; /* Centrar horizontalmente */
+    margin-top: auto; /* Empujar el botón hacia abajo */
+}
+
+.grid {
+    background-color: #024CAA;
+    padding: 0em;
+    border-radius: .5em;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease;
+}
+
+.grid h3 {
+    font-size: 3em;
+    color: aliceblue;
+}
+
+.grid p {
+    font-size: 1.5em;
+    font-weight: 700;
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+
+.grid:hover {
+    background-color: #EC8305;
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
+
+.icon {
+    width: 3em;
+    height: auto;
+}
+
+/* Ajustar los media queries */
+@media (max-width: 768px) {
+    .bento {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .grid:nth-child(1) {
+        grid-column: 1/3; /* Afecta el primer grid, ocupa toda la fila */
+    }
+    h1 {
+        color: #f90000;
+    }
+}
+
+@media (max-width: 480px) {
+    .bento {
+        grid-template-columns: repeat(1, 1fr); /* Todos los grids se muestran en una sola columna */
+    }
+    .grid:nth-child(1) {
+        grid-column: auto; /* Ajusta las columnas según el tamaño */
+    }
+    .grid:nth-child(4) {
+        grid-column: auto;
+    }
+    h1 {
+        color: #37ff0079;
+    }
+}
+
+.highlighted-text {
+    color: #f0f0f0; /* Un color de texto claro para mejorar el contraste para que se vea */
+}
+
+/* Estilo del botón dentro de .bento */
+.bento {
+    display: flex;
+    justify-content: center; /* Centrar horizontalmente */
+    margin-top: auto; /* Empujar el botón hacia abajo */
+}
+
+.grid {
+    background-color: #024CAA;
+    padding: 0em;
+    border-radius: .5em;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease;
+}
+
+#mostrarFrutasBtn {
+    background-color: #4CAF50; /* Color verde moderno */
+    border-radius: 20px; /* Bordes más redondeados */
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%; /* Ancho relativo para mantener proporción */
+    padding: 1em; /* Más espacio interno */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1); /* Sombra elegante */
+    transition: all 0.3s ease; /* Suavizar las transiciones */
+}
+
+#mostrarFrutasBtn h3 {
+    font-size: 2rem; /* Ajustar tamaño del texto */
+    color: white; /* Texto blanco para mejor contraste */
+}
+
+#mostrarFrutasBtn:hover {
+    background-color: #45a049; /* Color verde más oscuro en hover */
+    transform: scale(1.1); /* Crecer un poco en hover */
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.3); /* Sombra más pronunciada */
+}
+
+#mostrarFrutasBtn:active {
+    transform: scale(0.95); /* Efecto de "presionado" */
+}
+
